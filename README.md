@@ -28,6 +28,14 @@ This is the partition the tests will be sent to.
 #SBATCH -p h200
 ```
 
+A little further down the script, 2 paths are defined. MNTPATH defines a temporary location where the container image is stored. TMPPATH is the path that will be tested. Revise these to fit your environment.
+```sh
+MNTPATH=/mnt/perftest
+TMPPATH=$MNTPATH/fiotests
+```
+
+Note the filesystem is not cleaned up after testing. So please manually remove the test folder when testing is complete.
+
 Submit the job with the command
 ```sh
 sbatch fio-tests.slurm
