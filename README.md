@@ -1,10 +1,10 @@
-This repo holds the FIO test scripts.
+# This repo holds the FIO test scripts.
 
 Running these scripts enables replication of the testing described in the CoreWeave Storage IO performance Blog. Refer to the blog for more information.
 
 The tests are designed to be run under Slurm.
 
-To run the tests.
+## To run the tests.
 
 Edit the Slurm settings in the top of the fio-tests.slurm file. Some directives in particular are worth setting for your environment.
 
@@ -32,6 +32,8 @@ Submit the job with the command
 ```sh
 sbatch fio-tests.slurm
 ```
+
+## To collect the results
 
 When the test has finished, you can collect the results by running the python script. No special setup or libraries are needed.
 ```sh
