@@ -2,6 +2,8 @@
 
 Running these scripts enables replication of the testing described in the CoreWeave Storage IO performance Blog. Refer to the blog for more information.
 
+http://www.coreweave.com/blog/storage-benchmarking-distributed-file-storage
+
 The tests are designed to be run under Slurm.
 
 ## To run the tests.
